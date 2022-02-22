@@ -1,0 +1,9 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: example-task-syt-test
+spec:
+  steps:
+    - name: ls
+      image: ubuntu
+      args: ["ls"]
